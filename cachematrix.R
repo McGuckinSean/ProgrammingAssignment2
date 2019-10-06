@@ -9,7 +9,7 @@ makeCacheMatrix <- function(x = matrix()) #This function creates a special
                            #the matrix from the parent environment.
         { 
                 x <<- y #Value of the matrix from the parent environment is assigned.
-                invrtd <- NULL #If there is a new matrix, invrtd is back to NULL.
+                invrtd <<- NULL #If there is a new matrix, invrtd is back to NULL.
         }
         
         get <- function() x #Define the "get" function and create an envrironment
